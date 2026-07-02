@@ -1,0 +1,416 @@
+original_nombre,substitute_nombre,similarity_score,reason,vegan_safe,gluten_free_safe,cost_ratio
+aceite de coco,manteca vegetal,0.9967,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+aceite de coco,aceite vegetal,0.9927,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.44
+aceite de coco,aceite de girasol,0.9927,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.44
+aceite de coco,aceite de oliva,0.991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.89
+aceite de coco,margarina vegana,0.9871,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.89
+aceite de girasol,aceite de girasol,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+aceite de girasol,aceite de oliva,0.9991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+aceite de girasol,manteca vegetal,0.9965,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+aceite de girasol,margarina vegana,0.9955,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+aceite de girasol,mantequilla,0.9944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,3.0
+aceite de oliva,aceite vegetal,0.9991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+aceite de oliva,aceite de girasol,0.9991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+aceite de oliva,manteca vegetal,0.9967,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+aceite de oliva,margarina vegana,0.9932,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+aceite de oliva,aceite de coco,0.991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.12
+aceite vegetal,aceite de girasol,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+aceite vegetal,aceite de oliva,0.9991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+aceite vegetal,manteca vegetal,0.9965,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+aceite vegetal,margarina vegana,0.9955,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+aceite vegetal,mantequilla,0.9944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,3.0
+agar agar,agar agar,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+agar agar,goma xantana,0.9931,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.08
+agar agar,psyllium husk,0.9822,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+agar agar,gel de linaza,0.9226,"Similar en: poder aglutinante, nivel de dulzor, capacidad leudante",True,True,0.5
+agar agar,gel de chia,0.9196,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+aguacate,queso crema,0.9738,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,4.0
+aguacate,mantequilla,0.9639,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,2.4
+aguacate,margarina vegana,0.9623,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.6
+aguacate,harina de almendra,0.9611,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.6
+aguacate,crema,0.9555,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.2
+algarroba en polvo,xilitol,0.957,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,1.67
+algarroba en polvo,eritritol,0.957,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,1.5
+algarroba en polvo,stevia,0.9397,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,2.08
+algarroba en polvo,cacao en polvo,0.9353,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+algarroba en polvo,canela,0.9311,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.83
+almidon de maiz,tapioca,0.9923,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.67
+almidon de maiz,almidon de papa,0.9859,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+almidon de maiz,harina de garbanzo,0.976,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+almidon de maiz,harina de trigo,0.9738,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.3
+almidon de maiz,semola,0.9738,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.33
+almidon de papa,almidon de maiz,0.9859,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+almidon de papa,harina de garbanzo,0.9843,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+almidon de papa,tapioca,0.9825,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+almidon de papa,harina integral,0.9612,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.3
+almidon de papa,harina de quinoa,0.9311,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+aquafaba,yogur natural,0.9792,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,2.0
+aquafaba,yogur vegano,0.9692,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+aquafaba,gel de chia,0.9475,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,4.0
+aquafaba,tofu sedoso,0.9418,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.5
+aquafaba,psyllium husk,0.9292,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,9.0
+avena,harina de avena,0.9179,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+avena,harina de quinoa,0.9028,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,4.0
+avena,harina integral,0.9016,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.6
+avena,semola,0.8892,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.5
+avena,harina de trigo,0.8892,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.45
+azucar blanca,azucar flor,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+azucar blanca,stevia,0.9949,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,20.83
+azucar blanca,azucar de coco,0.9935,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,11.67
+azucar blanca,azucar morena,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.67
+azucar blanca,panela,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.33
+azucar de coco,stevia,0.994,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.79
+azucar de coco,azucar blanca,0.9935,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,0.09
+azucar de coco,azucar flor,0.9935,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,0.13
+azucar de coco,eritritol,0.9887,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.29
+azucar de coco,xilitol,0.9887,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.43
+azucar flor,azucar flor,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+azucar flor,stevia,0.9949,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,13.89
+azucar flor,azucar de coco,0.9935,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,7.78
+azucar flor,azucar morena,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.11
+azucar flor,panela,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.22
+azucar morena,azucar morena,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+azucar morena,miel,0.9953,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,6.0
+azucar morena,jarabe de maple,0.9947,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,10.0
+azucar morena,datiles molidos,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,5.0
+azucar morena,azucar blanca,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.6
+bicarbonato de sodio,levadura seca,0.9994,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+bicarbonato de sodio,polvo de hornear,0.9981,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.6
+bicarbonato de sodio,levadura fresca,0.9953,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.2
+bicarbonato de sodio,cremor tartaro,0.9673,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,3.0
+bicarbonato de sodio,vinagre blanco,0.8741,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.4
+buttermilk,yogur vegano,0.9193,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.4
+buttermilk,yogur natural,0.8875,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.6
+buttermilk,leche de soya,0.8745,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.88
+buttermilk,aquafaba,0.8717,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+buttermilk,leche entera,0.8622,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",False,True,0.44
+cacao amargo,cacao en polvo,0.9302,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.68
+cacao amargo,nueces molidas,0.8938,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.68
+cacao amargo,manteca vegetal,0.8721,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.27
+cacao amargo,aceite de coco,0.8639,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.41
+cacao amargo,aceite de oliva,0.8481,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.36
+cacao en polvo,algarroba en polvo,0.9353,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+cacao en polvo,cacao amargo,0.9302,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.47
+cacao en polvo,canela,0.8775,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.67
+cacao en polvo,chocolate cobertura,0.8445,"Similar en: poder aglutinante, aporte de humedad, capacidad leudante",True,True,1.2
+cacao en polvo,xilitol,0.8427,"Similar en: poder aglutinante, aporte de humedad, capacidad leudante",True,True,1.33
+cafe soluble,vainilla extracto,0.9756,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+cafe soluble,sal,0.9674,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.02
+cafe soluble,harina de arroz,0.9673,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.1
+cafe soluble,harina de maiz,0.9547,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.08
+cafe soluble,jugo de limon,0.9451,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.15
+canela,vainilla extracto,0.9801,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.5
+canela,harina de maiz,0.9692,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.15
+canela,sal,0.9662,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.05
+canela,algarroba en polvo,0.9311,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.2
+canela,harina de arroz,0.9297,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.2
+chocolate blanco,chocolate cobertura,0.9956,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.9
+chocolate blanco,azucar blanca,0.8637,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.06
+chocolate blanco,azucar flor,0.8637,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.09
+chocolate blanco,leche condensada,0.8591,"Similar en: poder aglutinante, nivel de dulzor, capacidad leudante",False,True,0.4
+chocolate blanco,stevia,0.8444,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,1.25
+chocolate cobertura,chocolate blanco,0.9956,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.11
+chocolate cobertura,azucar blanca,0.871,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.07
+chocolate cobertura,azucar flor,0.871,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.1
+chocolate cobertura,stevia,0.8516,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,1.39
+chocolate cobertura,leche condensada,0.8478,"Similar en: poder aglutinante, nivel de dulzor, capacidad leudante",False,True,0.44
+crema,crema de coco,0.9884,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.17
+crema,aguacate,0.9555,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.83
+crema,crema agria,0.9409,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,0.83
+crema,leche de coco,0.9378,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.58
+crema,queso crema,0.9326,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,3.33
+crema agria,crema,0.9409,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,1.2
+crema agria,leche de coco,0.9351,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.7
+crema agria,crema de coco,0.892,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,1.4
+crema agria,aguacate,0.8805,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+crema agria,leche entera,0.8682,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.22
+crema de coco,crema,0.9884,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.86
+crema de coco,aguacate,0.9445,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.71
+crema de coco,queso crema,0.9393,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,2.86
+crema de coco,aceite de girasol,0.9343,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.57
+crema de coco,aceite vegetal,0.9343,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.57
+cremor tartaro,bicarbonato de sodio,0.9673,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.33
+cremor tartaro,levadura seca,0.9582,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.67
+cremor tartaro,vinagre blanco,0.9524,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.13
+cremor tartaro,polvo de hornear,0.95,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.53
+cremor tartaro,levadura fresca,0.9404,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.4
+datiles molidos,miel,0.9922,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.2
+datiles molidos,jarabe de maple,0.9902,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+datiles molidos,azucar morena,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.2
+datiles molidos,panela,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.4
+datiles molidos,jarabe de agave,0.9646,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+eritritol,eritritol,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+eritritol,stevia,0.9977,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.39
+eritritol,azucar de coco,0.9887,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.78
+eritritol,azucar blanca,0.9858,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,0.07
+eritritol,azucar flor,0.9858,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,0.1
+gel de chia,tofu sedoso,0.9954,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.62
+gel de chia,gel de linaza,0.9936,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+gel de chia,psyllium husk,0.9727,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.25
+gel de chia,huevo,0.97,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,43.75
+gel de chia,yogur natural,0.961,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.5
+gel de linaza,gel de chia,0.9936,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+gel de linaza,tofu sedoso,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.83
+gel de linaza,huevo,0.9832,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,58.33
+gel de linaza,psyllium husk,0.9654,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,3.0
+gel de linaza,yogur natural,0.9348,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.67
+gelatina sin sabor,agar agar,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+gelatina sin sabor,goma xantana,0.9931,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.12
+gelatina sin sabor,psyllium husk,0.9822,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.25
+gelatina sin sabor,gel de linaza,0.9226,"Similar en: poder aglutinante, nivel de dulzor, capacidad leudante",True,True,0.75
+gelatina sin sabor,gel de chia,0.9196,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+goma xantana,agar agar,0.9931,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.48
+goma xantana,gelatina sin sabor,0.9931,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.32
+goma xantana,psyllium husk,0.9679,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.72
+goma xantana,gel de linaza,0.9168,"Similar en: poder aglutinante, nivel de dulzor, capacidad leudante",True,True,0.24
+goma xantana,gel de chia,0.9035,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.32
+harina de almendra,queso crema,0.9838,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.11
+harina de almendra,mantequilla de mani,0.9718,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.56
+harina de almendra,aguacate,0.9611,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.28
+harina de almendra,mantequilla,0.9448,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,0.67
+harina de almendra,nueces molidas,0.9436,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.83
+harina de arroz,harina de maiz,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+harina de arroz,sal,0.9862,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.25
+harina de arroz,semola,0.9786,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.5
+harina de arroz,harina de trigo,0.9786,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.45
+harina de arroz,harina de avena,0.978,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+harina de avena,harina de trigo,0.9925,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.3
+harina de avena,semola,0.9925,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.33
+harina de avena,harina de arroz,0.978,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+harina de avena,harina de maiz,0.9644,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+harina de avena,tapioca,0.9629,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.67
+harina de coco,semillas de lino,0.871,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+harina de coco,harina de almendra,0.8681,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+harina de coco,mantequilla de mani,0.8658,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.83
+harina de coco,goma xantana,0.8188,"Similar en: aporte de humedad, nivel de dulzor, capacidad leudante",True,True,2.08
+harina de coco,nueces molidas,0.8059,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,1.25
+harina de garbanzo,tapioca,0.9882,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+harina de garbanzo,almidon de papa,0.9843,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+harina de garbanzo,harina integral,0.9813,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.3
+harina de garbanzo,almidon de maiz,0.976,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+harina de garbanzo,semola,0.9432,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.25
+harina de maiz,harina de arroz,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+harina de maiz,sal,0.9865,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33
+harina de maiz,vainilla extracto,0.9836,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,16.67
+harina de maiz,canela,0.9692,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,6.67
+harina de maiz,harina de avena,0.9644,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+harina de quinoa,harina integral,0.9777,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.15
+harina de quinoa,harina de garbanzo,0.9427,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+harina de quinoa,tapioca,0.9351,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.62
+harina de quinoa,almidon de papa,0.9311,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+harina de quinoa,almidon de maiz,0.9239,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.38
+harina de trigo,harina de trigo,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,1.0
+harina de trigo,harina de avena,0.9925,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.33
+harina de trigo,harina de arroz,0.9786,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.22
+harina de trigo,tapioca,0.9769,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,5.56
+harina de trigo,almidon de maiz,0.9738,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.33
+harina integral,harina de garbanzo,0.9813,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.33
+harina integral,tapioca,0.9809,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,4.17
+harina integral,harina de quinoa,0.9777,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,6.67
+harina integral,almidon de papa,0.9612,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.33
+harina integral,almidon de maiz,0.9599,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.5
+huevo,gel de linaza,0.9832,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.02
+huevo,gel de chia,0.97,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.02
+huevo,tofu sedoso,0.9562,"Similar en: aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.01
+huevo,yogur natural,0.937,"Similar en: aporte de humedad, nivel de dulzor, capacidad leudante",False,True,0.01
+huevo,psyllium husk,0.9146,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.05
+jarabe de agave,jarabe de maple,0.9919,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+jarabe de agave,miel,0.9882,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.8
+jarabe de agave,azucar morena,0.9839,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.13
+jarabe de agave,panela,0.9839,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.27
+jarabe de agave,azucar blanca,0.9691,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.08
+jarabe de maple,miel,0.999,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.6
+jarabe de maple,panela,0.9947,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.2
+jarabe de maple,azucar morena,0.9947,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.1
+jarabe de maple,jarabe de agave,0.9919,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+jarabe de maple,datiles molidos,0.9902,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+jugo de limon,vinagre blanco,0.9571,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+jugo de limon,cafe soluble,0.9451,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,6.67
+jugo de limon,vainilla extracto,0.9158,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,8.33
+jugo de limon,sal,0.8826,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.17
+jugo de limon,harina de arroz,0.8692,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+leche condensada,miel,0.9462,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,1.5
+leche condensada,jarabe de maple,0.9353,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,2.5
+leche condensada,datiles molidos,0.9287,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,1.25
+leche condensada,jarabe de agave,0.9264,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,1.88
+leche condensada,panela,0.9247,"Similar en: poder aglutinante, nivel de dulzor, capacidad leudante",True,True,0.5
+leche de almendra,leche de macadamia,0.9939,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.6
+leche de almendra,leche de avena,0.9939,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.12
+leche de almendra,leche descremada,0.9939,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.36
+leche de almendra,leche de soya,0.9843,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.88
+leche de almendra,leche de arroz,0.9819,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+leche de arroz,leche descremada,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.45
+leche de arroz,leche de avena,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.4
+leche de arroz,leche de almendra,0.9819,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+leche de arroz,leche de macadamia,0.9681,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+leche de arroz,leche de soya,0.9385,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.1
+leche de avena,leche de avena,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+leche de avena,leche de almendra,0.9939,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.89
+leche de avena,leche de arroz,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.71
+leche de avena,leche de macadamia,0.9845,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.43
+leche de avena,leche de soya,0.9771,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.79
+leche de coco,crema,0.9378,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,1.71
+leche de coco,crema agria,0.9351,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.43
+leche de coco,leche entera,0.9284,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.31
+leche de coco,crema de coco,0.9036,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,2.0
+leche de coco,leche de macadamia,0.9023,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,1.14
+leche de macadamia,leche de almendra,0.9939,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.62
+leche de macadamia,leche de avena,0.9845,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.7
+leche de macadamia,leche descremada,0.9845,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.22
+leche de macadamia,leche de soya,0.9839,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.55
+leche de macadamia,leche de arroz,0.9681,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+leche de soya,leche entera,0.9868,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.5
+leche de soya,leche de almendra,0.9843,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.14
+leche de soya,leche de macadamia,0.9839,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.82
+leche de soya,leche descremada,0.9771,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.41
+leche de soya,leche de avena,0.9771,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.27
+leche descremada,leche de avena,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.11
+leche descremada,leche de almendra,0.9939,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.78
+leche descremada,leche de arroz,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.22
+leche descremada,leche de macadamia,0.9845,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,4.44
+leche descremada,leche de soya,0.9771,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.44
+leche entera,leche de soya,0.9868,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+leche entera,leche de macadamia,0.9673,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.64
+leche entera,leche descremada,0.9651,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.82
+leche entera,leche de avena,0.9651,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.55
+leche entera,leche de almendra,0.9598,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.27
+levadura fresca,polvo de hornear,0.9989,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+levadura fresca,levadura seca,0.9977,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.67
+levadura fresca,bicarbonato de sodio,0.9953,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.83
+levadura fresca,cremor tartaro,0.9404,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,2.5
+levadura fresca,vinagre blanco,0.8428,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.33
+levadura seca,polvo de hornear,0.9996,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+levadura seca,bicarbonato de sodio,0.9994,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+levadura seca,levadura fresca,0.9977,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.6
+levadura seca,cremor tartaro,0.9582,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,1.5
+levadura seca,vinagre blanco,0.8598,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.2
+manteca vegetal,aceite de coco,0.9967,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+manteca vegetal,aceite de oliva,0.9967,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+manteca vegetal,aceite vegetal,0.9965,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+manteca vegetal,aceite de girasol,0.9965,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+manteca vegetal,margarina vegana,0.9937,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+mantequilla,margarina vegana,0.9993,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+mantequilla,aceite vegetal,0.9944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33
+mantequilla,aceite de girasol,0.9944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33
+mantequilla,manteca vegetal,0.9915,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+mantequilla,aceite de oliva,0.9905,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+mantequilla de mani,harina de almendra,0.9718,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.8
+mantequilla de mani,queso crema,0.9612,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,2.0
+mantequilla de mani,mantequilla,0.9511,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.2
+mantequilla de mani,margarina vegana,0.9427,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+mantequilla de mani,nueces molidas,0.9417,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+margarina vegana,mantequilla,0.9993,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,1.5
+margarina vegana,aceite vegetal,0.9955,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+margarina vegana,aceite de girasol,0.9955,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+margarina vegana,manteca vegetal,0.9937,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+margarina vegana,aceite de oliva,0.9932,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+miel,jarabe de maple,0.999,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.67
+miel,panela,0.9953,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33
+miel,azucar morena,0.9953,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.17
+miel,datiles molidos,0.9922,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.83
+miel,jarabe de agave,0.9882,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+nueces molidas,margarina vegana,0.9749,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.53
+nueces molidas,mantequilla,0.9709,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",False,True,0.8
+nueces molidas,manteca vegetal,0.9687,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.4
+nueces molidas,aceite de coco,0.9564,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.6
+nueces molidas,aceite vegetal,0.9556,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.27
+panela,azucar morena,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+panela,miel,0.9953,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,3.0
+panela,jarabe de maple,0.9947,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,5.0
+panela,datiles molidos,0.9881,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.5
+panela,azucar blanca,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.3
+platano maduro,pure de manzana,0.9949,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+platano maduro,pure de zapallo,0.9726,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+platano maduro,pure de calabaza,0.9726,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+platano maduro,pure de remolacha,0.944,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+platano maduro,yogur natural,0.8959,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",False,True,2.0
+polvo de hornear,levadura seca,0.9996,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+polvo de hornear,levadura fresca,0.9989,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.75
+polvo de hornear,bicarbonato de sodio,0.9981,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.62
+polvo de hornear,cremor tartaro,0.95,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,1.88
+polvo de hornear,vinagre blanco,0.8475,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor",True,True,0.25
+psyllium husk,agar agar,0.9822,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+psyllium husk,gelatina sin sabor,0.9822,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.44
+psyllium husk,gel de chia,0.9727,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.44
+psyllium husk,goma xantana,0.9679,"Similar en: poder aglutinante, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.39
+psyllium husk,tofu sedoso,0.9678,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.28
+pure de calabaza,pure de calabaza,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de calabaza,pure de remolacha,0.9918,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de calabaza,pure de manzana,0.991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+pure de calabaza,platano maduro,0.9726,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de calabaza,yogur vegano,0.944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+pure de manzana,platano maduro,0.9949,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+pure de manzana,pure de zapallo,0.991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+pure de manzana,pure de calabaza,0.991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+pure de manzana,pure de remolacha,0.971,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.67
+pure de manzana,yogur natural,0.9163,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",False,True,1.33
+pure de remolacha,pure de zapallo,0.9918,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de remolacha,pure de calabaza,0.9918,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de remolacha,pure de manzana,0.971,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+pure de remolacha,platano maduro,0.944,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de remolacha,yogur vegano,0.938,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+pure de zapallo,pure de calabaza,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de zapallo,pure de remolacha,0.9918,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de zapallo,pure de manzana,0.991,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+pure de zapallo,platano maduro,0.9726,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.0
+pure de zapallo,yogur vegano,0.944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+queso crema,harina de almendra,0.9838,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.9
+queso crema,aguacate,0.9738,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.25
+queso crema,mantequilla de mani,0.9612,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+queso crema,mantequilla,0.9442,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.6
+queso crema,crema de coco,0.9393,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.35
+sal,vainilla extracto,0.9883,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,50.0
+sal,harina de maiz,0.9865,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+sal,harina de arroz,0.9862,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,4.0
+sal,cafe soluble,0.9674,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,40.0
+sal,canela,0.9662,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,20.0
+semillas de lino,nueces molidas,0.922,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,2.5
+semillas de lino,harina de quinoa,0.9109,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.33
+semillas de lino,harina de almendra,0.8999,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+semillas de lino,harina de coco,0.871,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+semillas de lino,aguacate,0.8427,"Similar en: poder aglutinante, aporte de humedad, nivel de dulzor, capacidad leudante",True,True,0.83
+semola,harina de trigo,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.9
+semola,harina de avena,0.9925,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+semola,harina de arroz,0.9786,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+semola,tapioca,0.9769,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,5.0
+semola,almidon de maiz,0.9738,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.0
+stevia,eritritol,0.9977,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.72
+stevia,xilitol,0.9977,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+stevia,azucar flor,0.9949,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.07
+stevia,azucar blanca,0.9949,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.05
+stevia,azucar de coco,0.994,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.56
+tapioca,almidon de maiz,0.9923,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.6
+tapioca,harina de garbanzo,0.9882,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+tapioca,almidon de papa,0.9825,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+tapioca,harina integral,0.9809,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.24
+tapioca,semola,0.9769,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,False,0.2
+tofu sedoso,gel de chia,0.9954,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.6
+tofu sedoso,gel de linaza,0.9867,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.2
+tofu sedoso,psyllium husk,0.9678,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,3.6
+tofu sedoso,yogur natural,0.958,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.8
+tofu sedoso,huevo,0.9562,"Similar en: aporte de humedad, nivel de dulzor, capacidad leudante",False,True,70.0
+vainilla extracto,sal,0.9883,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.02
+vainilla extracto,harina de maiz,0.9836,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.06
+vainilla extracto,canela,0.9801,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.4
+vainilla extracto,cafe soluble,0.9756,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.8
+vainilla extracto,harina de arroz,0.9682,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.08
+vinagre blanco,jugo de limon,0.9571,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+vinagre blanco,cremor tartaro,0.9524,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,7.5
+vinagre blanco,cafe soluble,0.8982,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,10.0
+vinagre blanco,sal,0.8793,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.25
+vinagre blanco,vainilla extracto,0.876,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,12.5
+xilitol,eritritol,1.0,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.9
+xilitol,stevia,0.9977,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+xilitol,azucar de coco,0.9887,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.7
+xilitol,azucar blanca,0.9858,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,0.06
+xilitol,azucar flor,0.9858,"Similar en: poder aglutinante, aporte de humedad, contenido graso, capacidad leudante",True,True,0.09
+yogur natural,aquafaba,0.9792,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.5
+yogur natural,yogur vegano,0.9786,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.5
+yogur natural,gel de chia,0.961,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,2.0
+yogur natural,tofu sedoso,0.958,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,1.25
+yogur natural,huevo,0.937,"Similar en: aporte de humedad, nivel de dulzor, capacidad leudante",False,True,87.5
+yogur vegano,yogur natural,0.9786,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",False,True,0.67
+yogur vegano,aquafaba,0.9692,"Similar en: aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33
+yogur vegano,pure de zapallo,0.944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33
+yogur vegano,pure de calabaza,0.944,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33
+yogur vegano,pure de remolacha,0.938,"Similar en: poder aglutinante, aporte de humedad, contenido graso, nivel de dulzor, capacidad leudante",True,True,0.33

@@ -1,0 +1,84 @@
+name,binding_power,moisture,fat_content,sweetness,leavening,is_vegan,is_gluten_free,price_per_unit,default_unit,unit_label
+huevo,9,7,5,0,1,0,1,350.0,unidad,unidad
+gel de linaza,8,6,3,0,0,1,1,6.0,g,g
+gel de chia,8,7,2,0,0,1,1,8.0,g,g
+aquafaba,7,8,0,0,2,1,1,2.0,ml,ml
+pure de manzana,6,8,0,4,0,1,1,3.0,g,g
+platano maduro,7,8,0,5,0,1,1,2.0,g,g
+yogur natural,5,7,2,1,1,0,1,4.0,g,g
+yogur vegano,4,7,1,1,1,1,1,6.0,g,g
+tofu sedoso,6,6,2,0,0,1,1,5.0,g,g
+queso crema,3,4,8,1,0,0,1,20.0,ml,ml
+gelatina sin sabor,7,3,0,0,0,0,1,8.0,g,g
+agar agar,7,3,0,0,0,1,1,12.0,g,g
+psyllium husk,8,5,0,0,0,1,1,18.0,g,g
+goma xantana,9,2,0,0,0,1,1,25.0,g,g
+pure de zapallo,5,8,0,3,0,1,1,2.0,g,g
+pure de remolacha,4,8,0,3,0,1,1,2.0,g,g
+harina de trigo,2,1,0,0,0,1,0,0.9,g,g
+harina integral,3,2,1,0,0,1,0,1.2,g,g
+harina de almendra,3,3,6,1,0,1,1,18.0,g,g
+harina de avena,2,2,1,1,0,1,1,3.0,g,g
+harina de arroz,1,1,0,0,0,1,1,2.0,g,g
+harina de coco,4,2,4,2,0,1,1,12.0,g,g
+harina de maiz,1,1,0,1,0,1,1,1.5,g,g
+harina de garbanzo,3,2,1,1,0,1,1,4.0,g,g
+harina de quinoa,3,2,2,0,0,1,1,8.0,g,g
+almidon de maiz,3,0,0,0,0,1,1,3.0,g,g
+almidon de papa,4,0,0,0,0,1,1,4.0,g,g
+tapioca,3,1,0,0,0,1,1,5.0,g,g
+semola,2,1,0,0,0,1,0,1.0,g,g
+mantequilla,1,2,10,0,0,0,1,12.0,g,g
+margarina vegana,1,2,9,0,0,1,1,8.0,g,g
+aceite vegetal,0,2,10,0,0,1,1,4.0,ml,ml
+aceite de coco,0,1,10,1,0,1,1,9.0,ml,ml
+aceite de oliva,0,2,9,0,0,1,1,8.0,ml,ml
+manteca vegetal,0,1,10,0,0,1,1,6.0,g,g
+crema,1,6,8,1,0,0,1,6.0,ml,ml
+crema de coco,1,5,8,2,0,1,1,7.0,ml,ml
+aguacate,2,4,7,0,0,1,1,5.0,g,g
+mantequilla de mani,3,2,8,2,0,1,1,10.0,g,g
+aceite de girasol,0,2,10,0,0,1,1,4.0,ml,ml
+azucar blanca,0,0,0,10,0,1,1,1.2,g,g
+azucar morena,1,2,0,9,0,1,1,2.0,g,g
+azucar flor,0,0,0,10,0,1,1,1.8,g,g
+miel,1,3,0,9,0,0,1,12.0,g,g
+jarabe de maple,1,3,0,8,0,1,1,20.0,g,g
+jarabe de agave,0,3,0,8,0,1,1,15.0,g,g
+stevia,0,0,0,8,0,1,1,25.0,g,g
+eritritol,0,0,0,7,0,1,1,18.0,g,g
+azucar de coco,1,1,0,7,0,1,1,14.0,g,g
+datiles molidos,2,3,0,8,0,1,1,10.0,g,g
+panela,1,2,0,9,0,1,1,4.0,g,g
+xilitol,0,0,0,7,0,1,1,20.0,g,g
+leche entera,2,9,3,2,0,0,1,1.1,ml,ml
+leche descremada,1,9,1,2,0,0,1,0.9,ml,ml
+leche de almendra,1,9,1,1,0,1,1,2.5,ml,ml
+leche de coco,1,7,5,2,0,1,1,3.5,ml,ml
+leche de avena,1,9,1,2,0,1,1,2.8,ml,ml
+leche de soya,2,9,2,1,0,1,1,2.2,ml,ml
+leche de arroz,0,9,0,2,0,1,1,2.0,ml,ml
+buttermilk,3,9,2,1,3,0,1,2.5,ml,ml
+leche condensada,1,5,3,10,0,0,1,8.0,ml,ml
+leche de macadamia,1,8,2,1,0,1,1,4.0,ml,ml
+crema agria,2,6,5,1,1,0,1,5.0,ml,ml
+polvo de hornear,0,0,0,0,10,1,1,8.0,g,g
+bicarbonato de sodio,0,0,0,0,8,1,1,5.0,g,g
+levadura seca,0,0,0,0,9,1,1,10.0,g,g
+levadura fresca,0,1,0,0,10,1,1,6.0,g,g
+cremor tartaro,0,0,0,0,4,1,1,15.0,g,g
+vainilla extracto,0,1,0,1,0,1,1,25.0,ml,ml
+canela,0,0,0,2,0,1,1,10.0,g,g
+cacao en polvo,1,0,3,3,0,1,1,15.0,g,g
+chocolate cobertura,1,0,6,8,0,1,1,18.0,g,g
+chocolate blanco,0,0,7,9,0,0,1,20.0,g,g
+cacao amargo,1,0,4,1,0,1,1,22.0,g,g
+algarroba en polvo,1,0,1,4,0,1,1,12.0,g,g
+sal,0,0,0,0,0,1,1,0.5,g,g
+vinagre blanco,0,2,0,0,2,1,1,2.0,ml,ml
+jugo de limon,0,3,0,1,1,1,1,3.0,ml,ml
+cafe soluble,0,2,0,0,0,1,1,20.0,g,g
+nueces molidas,2,1,7,0,0,1,1,15.0,g,g
+avena,2,3,2,1,0,1,1,2.0,g,g
+semillas de lino,3,2,4,0,0,1,1,6.0,g,g
+pure de calabaza,5,8,0,3,0,1,1,2.0,g,g
