@@ -10,39 +10,50 @@ from app.services.recipe_service import scale_recipe
 import uuid
 from datetime import datetime
 
-router = APIRouter(prefix="/recipes", tags=["Recetas"])
-
+router = APIRouter(prefix='/recipes', tags=['Recetas'])
 
 def _build_recipe_out(recipe: Recipe) -> dict:
     return {
-        "id":            recipe.id,
-        "name":          recipe.name,
-        "description":   recipe.description,
-        "category":      recipe.category,
-        "base_servings": recipe.base_servings,
-        "prep_time_min": recipe.prep_time_min,
-        "cook_time_min": recipe.cook_time_min,
-        "instructions":  recipe.instructions,
-        "is_public":     recipe.is_public,
-        "created_at":    recipe.created_at,
-        "ingredients": [
+        'id':            recipe.id,
+        'name':          recipe.name,
+        'description':   recipe.description,
+        'category':      recipe.category,
+        'base_servings': recipe.base_servings,
+        'prep_time_min': recipe.prep_time_min,
+        'cook_time_min': recipe.cook_time_min,
+        'instructions':  recipe.instructions,
+        'is_public':     recipe.is_public,
+        'created_at':    recipe.created_at,
+        'ingredients': [
             {
-                "id":              ri.id,
-                "ingredient_id":   ri.ingredient_id,
-                "ingredient_name": ri.ingredient.name,
-                "quantity":        ri.quantity,
-                "unit":            ri.unit,
-                "notes":           ri.notes,
+                'id':              ri.id,
+                'ingredient_id':   ri.ingredient_id,
+                'ingredient_name': ri.ingredient.name,
+                'quantity':        ri.quantity,
+                'unit':            ri.unit,
+                'notes':           ri.notes,
             }
             for ri in recipe.ingredients
         ],
     }
 
+async def _fetch_recipe(recipe_id, db: AsyncSession):
+    # EL SECRETO: populate_existing=True fuerza a SQLAlchemy a ignorar 
+    # la caché en memoria y traer las relaciones completas desde cero.
+    result = await db.execute(
+        select(Recipe)
+        .options(
+            selectinload(Recipe.ingredients).selectinload(RecipeIngredient.ingredient)
+        )
+        .where(Recipe.id == recipe_id)
+        .execution_options(populate_existing=True)
+    )
+    return result.scalar_one_or_none()
 
-@router.get("", response_model=list[RecipeOut])
+@router.get('', response_model=list[RecipeOut])
 async def list_recipes(
     category: str | None = Query(default=None),
-    search: str = Query(default=""),
+    search: str = Query(default=''),
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
@@ -55,14 +66,12 @@ async def list_recipes(
     if category:
         query = query.where(Recipe.category == category)
     if search:
-        query = query.where(Recipe.name.ilike(f"%{search}%"))
-
+        query = query.where(Recipe.name.ilike(f'%{search}%'))
+        
     result = await db.execute(query)
-    recipes = result.scalars().all()
-    return [_build_recipe_out(r) for r in recipes]
+    return [_build_recipe_out(r) for r in result.scalars().all()]
 
-
-@router.get("/{recipe_id}", response_model=RecipeOut)
+@router.get('/{recipe_id}', response_model=RecipeOut)
 async def get_recipe(
     recipe_id: uuid.UUID,
     db: AsyncSession = Depends(get_db),
@@ -75,11 +84,10 @@ async def get_recipe(
     )
     recipe = result.scalar_one_or_none()
     if not recipe:
-        raise HTTPException(404, "Receta no encontrada")
+        raise HTTPException(404, 'Receta no encontrada')
     return _build_recipe_out(recipe)
 
-
-@router.post("", response_model=RecipeOut, status_code=201)
+@router.post('', response_model=RecipeOut, status_code=201)
 async def create_recipe(
     data: RecipeCreate,
     db: AsyncSession = Depends(get_db),
@@ -100,26 +108,20 @@ async def create_recipe(
     await db.flush()
 
     for ing_data in data.ingredients:
-        ri = RecipeIngredient(
+        db.add(RecipeIngredient(
             recipe_id=recipe.id,
             ingredient_id=ing_data.ingredient_id,
             quantity=ing_data.quantity,
             unit=ing_data.unit,
             notes=ing_data.notes,
-        )
-        db.add(ri)
+        ))
 
     await db.commit()
+    # Hacemos una consulta fresca después del commit
+    recipe_out = await _fetch_recipe(recipe.id, db)
+    return _build_recipe_out(recipe_out)
 
-    result = await db.execute(
-        select(Recipe)
-        .options(selectinload(Recipe.ingredients).selectinload(RecipeIngredient.ingredient))
-        .where(Recipe.id == recipe.id)
-    )
-    return _build_recipe_out(result.scalar_one())
-
-
-@router.put("/{recipe_id}", response_model=RecipeOut)
+@router.put('/{recipe_id}', response_model=RecipeOut)
 async def update_recipe(
     recipe_id: uuid.UUID,
     data: RecipeCreate,
@@ -133,7 +135,7 @@ async def update_recipe(
     )
     recipe = result.scalar_one_or_none()
     if not recipe:
-        raise HTTPException(404, "Receta no encontrada")
+        raise HTTPException(404, 'Receta no encontrada')
 
     recipe.name = data.name
     recipe.description = data.description
@@ -145,31 +147,28 @@ async def update_recipe(
     recipe.is_public = data.is_public
     recipe.updated_at = datetime.utcnow()
 
+    # Borramos los ingredientes viejos
     for ri in recipe.ingredients:
         await db.delete(ri)
     await db.flush()
 
+    # Agregamos los nuevos
     for ing_data in data.ingredients:
-        ri = RecipeIngredient(
+        db.add(RecipeIngredient(
             recipe_id=recipe.id,
             ingredient_id=ing_data.ingredient_id,
             quantity=ing_data.quantity,
             unit=ing_data.unit,
             notes=ing_data.notes,
-        )
-        db.add(ri)
+        ))
 
     await db.commit()
+    
+    # IMPORTANTE: Hacemos una consulta fresca con todas las relaciones cargadas
+    updated_recipe = await _fetch_recipe(recipe_id, db)
+    return _build_recipe_out(updated_recipe)
 
-    result = await db.execute(
-        select(Recipe)
-        .options(selectinload(Recipe.ingredients).selectinload(RecipeIngredient.ingredient))
-        .where(Recipe.id == recipe.id)
-    )
-    return _build_recipe_out(result.scalar_one())
-
-
-@router.delete("/{recipe_id}", status_code=204)
+@router.delete('/{recipe_id}', status_code=204)
 async def delete_recipe(
     recipe_id: uuid.UUID,
     db: AsyncSession = Depends(get_db),
@@ -180,23 +179,18 @@ async def delete_recipe(
     )
     recipe = result.scalar_one_or_none()
     if not recipe:
-        raise HTTPException(404, "Receta no encontrada")
+        raise HTTPException(404, 'Receta no encontrada')
     await db.delete(recipe)
     await db.commit()
 
-
-@router.get("/{recipe_id}/scale")
+@router.get('/{recipe_id}/scale')
 async def scale(
     recipe_id: uuid.UUID,
-    servings: int = Query(gt=0, description="Número de porciones deseadas"),
+    servings: int = Query(gt=0),
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    """
-    Escala automáticamente los ingredientes de una receta a las porciones solicitadas.
-    También devuelve el costo estimado de ingredientes.
-    """
     scaled = await scale_recipe(recipe_id, servings, db)
     if not scaled:
-        raise HTTPException(404, "Receta no encontrada")
+        raise HTTPException(404, 'Receta no encontrada')
     return scaled
