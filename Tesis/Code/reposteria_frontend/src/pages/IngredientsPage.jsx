@@ -1,13 +1,176 @@
 import { useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import toast from 'react-hot-toast'
 import api from '../services/api'
 import { Card, Badge, PageHeader, Spinner, EmptyState } from '../components/UI'
-import { ShoppingBag, Leaf, Wheat, ArrowRight, Search } from 'lucide-react'
+import { ShoppingBag, Leaf, Wheat, ArrowRight, Search, Pencil, Check, X } from 'lucide-react'
 
 function PropertyBar({ value, max = 10, color = 'var(--accent)' }) {
   return (
     <div style={{ height: 4, background: 'var(--bg3)', borderRadius: 999, overflow: 'hidden', flex: 1 }}>
       <div style={{ height: '100%', width: `${(value / max) * 100}%`, background: color, borderRadius: 999 }} />
+    </div>
+  )
+}
+
+function mensajeError(e) {
+  const d = e.response?.data?.detail
+  if (typeof d === 'string') return d
+  if (Array.isArray(d) && d[0]?.msg) return d[0].msg
+  return 'No se pudo guardar el precio'
+}
+
+// Formatos de compra habituales. "qty" es la cantidad en la unidad base del ingrediente
+// (g, ml o unidad), que es la unidad que usan las recetas para calcular el costo.
+const FORMATOS = {
+  g: [
+    { key: '1kg', label: '1 kg', qty: 1000 },
+    { key: '500g', label: '500 g', qty: 500 },
+    { key: '250g', label: '250 g', qty: 250 },
+    { key: '1g', label: '1 g', qty: 1 },
+  ],
+  ml: [
+    { key: '1l', label: '1 litro', qty: 1000 },
+    { key: '500ml', label: '500 ml', qty: 500 },
+    { key: '200ml', label: '200 ml', qty: 200 },
+    { key: '1ml', label: '1 ml', qty: 1 },
+  ],
+  unidad: [
+    { key: '1u', label: '1 unidad', qty: 1 },
+    { key: '12u', label: 'docena (12)', qty: 12 },
+    { key: '30u', label: 'bandeja (30)', qty: 30 },
+  ],
+}
+
+function formatosPara(unitLabel) {
+  const base = FORMATOS[unitLabel] || [{ key: '1x', label: `1 ${unitLabel}`, qty: 1 }]
+  return [...base, { key: 'otro', label: 'Otro tamaño…', qty: null }]
+}
+
+const fmt = (n, dec = 4) => n.toLocaleString('es-CL', { maximumFractionDigits: dec })
+const limpiar = (n) => Number(n.toFixed(4))
+
+// Interpreta lo que escribe el usuario siguiendo la convención chilena:
+// coma = decimal ("1,25"), punto como separador de miles ("4.500" = 4500).
+function leerNumero(texto) {
+  const t = String(texto).trim()
+  if (t === '') return null
+  let limpio
+  if (t.includes(',')) limpio = t.replace(/\./g, '').replace(',', '.')
+  else if (/^\d{1,3}(\.\d{3})+$/.test(t)) limpio = t.replace(/\./g, '')
+  else limpio = t
+  const n = Number(limpio)
+  return Number.isFinite(n) && n >= 0 ? n : null
+}
+
+// Equivalente de compra para mostrar junto al precio: g -> por kg, ml -> por litro
+function equivalente(ing) {
+  if (ing.unit_label === 'g') return `$${fmt(ing.price_per_unit * 1000, 2)} / kg`
+  if (ing.unit_label === 'ml') return `$${fmt(ing.price_per_unit * 1000, 2)} / litro`
+  return null
+}
+
+function PriceEditor({ ing }) {
+  const qc = useQueryClient()
+  const formatos = formatosPara(ing.unit_label)
+  const [editing, setEditing] = useState(false)
+  const [formatKey, setFormatKey] = useState(formatos[0].key)
+  const [precio, setPrecio] = useState('')
+  const [cantidad, setCantidad] = useState('')
+
+  const mutation = useMutation({
+    mutationFn: (price) =>
+      api.patch(`/ingredients/${ing.id}/price`, { price_per_unit: price }).then(r => r.data),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['ingredients'] })
+      toast.success(`Precio de ${ing.name} actualizado`)
+      setEditing(false)
+    },
+    onError: e => toast.error(mensajeError(e)),
+  })
+
+  const formato = formatos.find(f => f.key === formatKey) || formatos[0]
+  const qty = formato.qty ?? leerNumero(cantidad)
+  const total = leerNumero(precio)
+  const porUnidad = total !== null && qty !== null && qty > 0 ? limpiar(total / qty) : null
+
+  const start = () => {
+    const f = formatos[0]
+    setFormatKey(f.key)
+    setPrecio(String(limpiar(ing.price_per_unit * f.qty)))
+    setCantidad('')
+    setEditing(true)
+  }
+  const cancel = () => setEditing(false)
+  const cambiarFormato = (key) => {
+    const anterior = porUnidad
+    setFormatKey(key)
+    const nuevo = formatos.find(f => f.key === key)
+    // al cambiar de formato, reexpresa el precio actual en el formato elegido
+    if (nuevo?.qty && anterior !== null) setPrecio(String(limpiar(anterior * nuevo.qty)))
+  }
+  const save = () => {
+    if (porUnidad === null) {
+      toast.error('Completa el precio y la cantidad del envase (valores válidos)')
+      return
+    }
+    if (Math.abs(porUnidad - ing.price_per_unit) < 1e-9) { setEditing(false); return }
+    mutation.mutate(porUnidad)
+  }
+  const onKey = (e) => { if (e.key === 'Enter') save(); if (e.key === 'Escape') cancel() }
+
+  const iconBtn = {
+    background: 'transparent', border: 'none', cursor: 'pointer',
+    padding: 2, display: 'flex', alignItems: 'center', color: 'var(--muted)',
+  }
+  const campo = { padding: '2px 6px', fontSize: '0.78rem' }
+  const fila = { display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }
+  const eq = equivalente(ing)
+
+  return (
+    <div onClick={e => e.stopPropagation()}
+      style={{ fontSize: '0.78rem', color: 'var(--muted)', marginBottom: '0.5rem', minHeight: 26 }}>
+      {editing ? (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          <div style={fila}>
+            <span>Pagué $</span>
+            <input autoFocus inputMode="decimal" value={precio} disabled={mutation.isPending}
+              onChange={e => setPrecio(e.target.value)} onKeyDown={onKey}
+              aria-label={`Precio de compra de ${ing.name}`} style={{ ...campo, width: 76 }} />
+            <span>por</span>
+            <select value={formatKey} disabled={mutation.isPending}
+              onChange={e => cambiarFormato(e.target.value)}
+              aria-label="Formato de compra" style={campo}>
+              {formatos.map(f => <option key={f.key} value={f.key}>{f.label}</option>)}
+            </select>
+          </div>
+          {formatKey === 'otro' && (
+            <div style={fila}>
+              <span>Envase de</span>
+              <input inputMode="decimal" value={cantidad} disabled={mutation.isPending}
+                onChange={e => setCantidad(e.target.value)} onKeyDown={onKey}
+                aria-label="Cantidad del envase" style={{ ...campo, width: 64 }} />
+              <span>{ing.unit_label === 'unidad' ? 'unidades' : ing.unit_label}</span>
+            </div>
+          )}
+          <div style={fila}>
+            <span style={{ color: porUnidad === null ? 'var(--muted)' : 'inherit', fontWeight: 500 }}>
+              {porUnidad === null ? 'Completa los datos' : `= $${fmt(porUnidad)} / ${ing.unit_label}`}
+            </span>
+            <button style={{ ...iconBtn, color: 'var(--success)' }} onClick={save}
+              disabled={mutation.isPending} title="Guardar" aria-label="Guardar precio"><Check size={15} /></button>
+            <button style={iconBtn} onClick={cancel}
+              disabled={mutation.isPending} title="Cancelar" aria-label="Cancelar"><X size={15} /></button>
+          </div>
+        </div>
+      ) : (
+        <div style={fila}>
+          <span>${fmt(ing.price_per_unit)} / {ing.unit_label}</span>
+          {eq && <span style={{ opacity: 0.7 }}>· {eq}</span>}
+          <button style={iconBtn} onClick={start}
+            title="Editar precio" aria-label={`Editar precio de ${ing.name}`}><Pencil size={13} /></button>
+        </div>
+      )}
     </div>
   )
 }
@@ -168,9 +331,7 @@ export default function IngredientsPage() {
                     {ing.is_gluten_free && <Wheat size={13} color="var(--accent2)" />}
                   </div>
                 </div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginBottom: '0.5rem' }}>
-                  ${ing.price_per_unit.toLocaleString('es-CL')} / {ing.unit_label}
-                </div>
+                <PriceEditor ing={ing} />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
                   {[
                     ['Aglut.', ing.binding_power, 'var(--accent)'],

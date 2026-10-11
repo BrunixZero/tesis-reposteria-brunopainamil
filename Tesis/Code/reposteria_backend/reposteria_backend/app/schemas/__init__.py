@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 
 
 # ── Usuarios ────────────────────────────────────────────────
@@ -53,6 +53,11 @@ class IngredientCreate(BaseModel):
     is_gluten_free: bool = False
     price_per_unit: float = 0
     unit_label: str = "unidad"
+
+
+class IngredientPriceUpdate(BaseModel):
+    """Solo el precio: permite editarlo sin tocar las propiedades del modelo KNN."""
+    price_per_unit: float = Field(ge=0, le=10_000_000)
 
 
 # ── Sustitutos ───────────────────────────────────────────────

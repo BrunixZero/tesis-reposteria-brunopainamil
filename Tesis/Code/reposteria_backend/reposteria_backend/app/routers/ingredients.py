@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from app.config import get_db
 from app.models import Ingredient, User
-from app.schemas import IngredientOut, IngredientCreate
+from app.schemas import IngredientOut, IngredientCreate, IngredientPriceUpdate
 from app.services.auth import get_current_user
 from app.services.recipe_service import get_substitutes
 import uuid
@@ -91,6 +91,28 @@ async def update_ingredient(
     for field, value in data.model_dump().items():
         setattr(ing, field, value)
 
+    await db.commit()
+    await db.refresh(ing)
+    return ing
+
+
+@router.patch("/{ingredient_id}/price", response_model=IngredientOut)
+async def update_ingredient_price(
+    ingredient_id: uuid.UUID,
+    data: IngredientPriceUpdate,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """
+    Actualiza solo el precio por unidad. Las cotizaciones ya creadas no cambian,
+    porque guardan el costo unitario del momento en que se generaron.
+    """
+    result = await db.execute(select(Ingredient).where(Ingredient.id == ingredient_id))
+    ing = result.scalar_one_or_none()
+    if not ing:
+        raise HTTPException(404, "Ingrediente no encontrado")
+
+    ing.price_per_unit = data.price_per_unit
     await db.commit()
     await db.refresh(ing)
     return ing
