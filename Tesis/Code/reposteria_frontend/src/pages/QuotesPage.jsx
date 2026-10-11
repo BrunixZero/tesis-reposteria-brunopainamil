@@ -3,7 +3,8 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import toast from 'react-hot-toast'
 import api from '../services/api'
 import { Btn, Card, Badge, PageHeader, Modal, FormField, EmptyState, Spinner } from '../components/UI'
-import { Plus, FileText, Trash2, CheckCircle, Send, XCircle } from 'lucide-react'
+import { Plus, FileText, Trash2, CheckCircle, Send, XCircle, Download } from 'lucide-react'
+import { descargarCotizacionPDF } from '../utils/quotePdf'
 
 const STATUS_MAP = {
   draft:    { label: 'Borrador',  color: 'muted'   },
@@ -14,6 +15,13 @@ const STATUS_MAP = {
 
 function QuoteCard({ quote, onDelete, onStatusChange }) {
   const s = STATUS_MAP[quote.status] || STATUS_MAP.draft
+  const [generando, setGenerando] = useState(false)
+  const descargar = async () => {
+    setGenerando(true)
+    try { await descargarCotizacionPDF(quote) }
+    catch (e) { console.error(e); toast.error('No se pudo generar el PDF') }
+    finally { setGenerando(false) }
+  }
   return (
     <Card>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
@@ -92,6 +100,9 @@ function QuoteCard({ quote, onDelete, onStatusChange }) {
             </Btn>
           </>
         )}
+        <Btn variant="secondary" size="sm" onClick={descargar} disabled={generando}>
+          <Download size={13} /> {generando ? 'Generando...' : 'PDF'}
+        </Btn>
         <Btn variant="ghost" size="sm" onClick={() => onDelete(quote.id)} style={{ marginLeft: 'auto' }}>
           <Trash2 size={14} color="var(--danger)" />
         </Btn>

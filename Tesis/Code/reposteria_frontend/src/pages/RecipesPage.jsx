@@ -7,42 +7,58 @@ import { Plus, BookOpen, Clock, Users, Trash2, ChevronRight, X, Scale } from 'lu
 
 const CATEGORIES = ['torta', 'galleta', 'pan', 'muffin', 'pie', 'postre', 'otro']
 
+// Boton de icono de tamano fijo: no se estira ni se encoge, asi nunca se sale del recuadro
+function IconBtn({ onClick, title, children }) {
+  return (
+    <button onClick={onClick} title={title} aria-label={title}
+      style={{
+        width: 34, height: 34, padding: 0, flexShrink: 0,
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        background: 'transparent', color: 'var(--muted)',
+      }}>
+      {children}
+    </button>
+  )
+}
+
 function RecipeCard({ recipe, onClick, onDelete }) {
+  const dato = { display: 'flex', alignItems: 'center', gap: '0.3rem', whiteSpace: 'nowrap' }
   return (
     <Card style={{ cursor: 'pointer', transition: 'border-color 0.2s' }}
       onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--accent)'}
       onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-        <div onClick={onClick} style={{ flex: 1 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem' }}>
+        {/* minWidth: 0 permite que este bloque se encoja en vez de empujar los botones fuera del recuadro */}
+        <div onClick={onClick} style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
             {recipe.category && <Badge color="warning">{recipe.category}</Badge>}
           </div>
-          <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem' }}>{recipe.name}</h3>
+          <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', overflowWrap: 'anywhere' }}>{recipe.name}</h3>
           {recipe.description && (
-            <p style={{ color: 'var(--muted)', fontSize: '0.85rem', marginBottom: '0.75rem',
+            <p style={{ color: 'var(--muted)', fontSize: '0.85rem', marginBottom: '0.75rem', overflowWrap: 'anywhere',
               overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
               {recipe.description}
             </p>
           )}
-          <div style={{ display: 'flex', gap: '1rem', color: 'var(--muted)', fontSize: '0.8rem' }}>
-            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem 1rem', color: 'var(--muted)', fontSize: '0.8rem' }}>
+            <span style={dato}>
               <Users size={13} /> {recipe.base_servings} porciones
             </span>
             {recipe.prep_time_min > 0 && (
-              <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+              <span style={dato}>
                 <Clock size={13} /> {recipe.prep_time_min + recipe.cook_time_min} min
               </span>
             )}
-            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+            <span style={dato}>
               <BookOpen size={13} /> {recipe.ingredients?.length || 0} ingredientes
             </span>
           </div>
         </div>
-        <div style={{ display: 'flex', gap: '0.5rem', marginLeft: '1rem' }}>
-          <Btn variant="ghost" size="sm" onClick={onClick}><ChevronRight size={16} /></Btn>
-          <Btn variant="ghost" size="sm" onClick={(e) => { e.stopPropagation(); onDelete(recipe.id) }}>
+        <div style={{ display: 'flex', gap: '0.15rem', flexShrink: 0 }}>
+          <IconBtn onClick={onClick} title="Ver receta"><ChevronRight size={16} /></IconBtn>
+          <IconBtn onClick={(e) => { e.stopPropagation(); onDelete(recipe.id) }} title="Eliminar receta">
             <Trash2 size={15} color="var(--danger)" />
-          </Btn>
+          </IconBtn>
         </div>
       </div>
     </Card>
@@ -278,7 +294,7 @@ export default function RecipesPage() {
       ) : (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
           {filtered.map(r => (
-            <div key={r.id}>
+            <div key={r.id} style={{ minWidth: 0 }}>
               <RecipeCard
                 recipe={r}
                 onClick={() => { setDetailRecipe(r); setModalOpen(true) }}
